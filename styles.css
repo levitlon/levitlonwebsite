@@ -1,0 +1,310 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+}
+
+body {
+    background: url('levitlonbackground.png') no-repeat center center fixed; 
+    background-size: cover; /*Pra imagem cobrir o body*/
+    color: #333; /* Cor do texto geral do site */
+}
+
+/* Cabeçalho */
+header {
+    /* Remove o fundo do cabeçalho */
+    background: none;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1; 
+}
+
+header h1 {
+    font-size: 3rem; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+header p {
+    font-size: 1.2rem; 
+    margin-top: 10px; 
+}
+
+/* Menu */
+.menu {
+    padding: 30px; 
+    text-align: center;
+}
+
+.categoria {
+    margin-bottom: 40px; 
+}
+
+.categoria h3 {
+    font-size: 1.8rem; 
+    margin-bottom: 20px; 
+    color: #ff4500; 
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os produtos */
+}
+
+.produto {
+    background: white;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); 
+    text-align: center;
+    width: 250px; 
+}
+
+.produto img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 15px;
+    border-radius: 8px; 
+}
+
+.produto h3,
+.produto p {
+    margin-bottom: 10px; 
+}
+
+.produto select {
+    margin-bottom: 15px; 
+    padding: 8px; 
+    border: 1px solid #cecaca; 
+    border-radius: 5px; 
+    width: 200px; /* Largura fixa para o select */
+    overflow: hidden; /* Esconde o texto que excede a largura */
+    text-overflow: ellipsis; /* Adiciona "..." ao final do texto cortado */
+    white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+    
+}
+
+
+
+.adicionar {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 12px 20px; 
+    cursor: pointer;
+    border-radius: 8px; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; 
+}
+
+.adicionar:hover {
+    background-color: #e03e00;
+}
+
+/* Carrinho */
+.carrinho {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    width: 300px; /* Largura inicial da barra lateral */
+    height: 100%;
+    padding: 30px;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: width 0.3s ease, transform 0.3s ease; 
+}
+
+
+
+.carrinho-toggle {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#toggleCarrinho img {
+    width: 50px; 
+    height: 50px;
+    cursor: pointer;
+}
+
+.carrinho.recolhido {
+    width: 100px; /* Largura da barra lateral recolhida */ 
+}
+
+.carrinho.recolhido #toggleCarrinho img {
+    transform: rotate(180deg);
+}
+
+#toggleCarrinho {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s ease; 
+
+}
+
+
+
+/* Esconde os elementos do carrinho quando ele está recolhido */
+.carrinho.recolhido #listaCarrinho,
+.carrinho.recolhido p,
+.carrinho.recolhido .btn-finalizar {
+    display: none;
+}
+
+.carrinho h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 20px; 
+    color: #ff4500; 
+}
+
+.carrinho ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px; 
+}
+
+.carrinho li {
+    margin-bottom: 10px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.carrinho li span {
+    flex-grow: 1; 
+}
+
+.remover-item {
+    background-color: #ddd; 
+    color: #333; 
+    border: none;
+    padding: 6px 10px; 
+    cursor: pointer;
+    border-radius: 5px; 
+    margin-left: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+.remover-item:hover {
+    background-color: #ccc;
+}
+
+.carrinho p {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+}
+
+.btn-finalizar {
+    display: block;
+    text-align: center;
+    background: #ff4500;
+    color: white;
+    padding: 12px 20px; 
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 8px; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-finalizar:hover {
+    background: #e03e00;
+}
+
+/* Estilos para a página de pagamento */
+.pagamento-container {
+    padding: 30px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.pagamento-container h2 {
+    font-size: 1.8rem; 
+    margin-bottom: 20px; 
+    color: #ff4500; 
+}
+
+.pagamento-container ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px; 
+}
+
+.pagamento-container li {
+    margin-bottom: 10px; 
+}
+
+.pagamento-container p {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    margin-bottom: 30px; 
+}
+
+.pagamento-container label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+.pagamento-container input[type="radio"] {
+    margin-right: 10px; 
+}
+
+.pagamento-container textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+}
+
+.pagamento-container button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 12px 20px; 
+    cursor: pointer;
+    border-radius: 8px; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; 
+}
+
+.pagamento-container button:hover {
+    background-color: #e03e00;
+}
+
+/* Estilos para tornar o site responsivo */
+@media (max-width: 768px) {
+    .produtos {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .produto {
+        width: 90%; 
+    }
+
+    .carrinho {
+        width: 90%; 
+        position: relative; 
+        height: auto; 
+        bottom: 0; 
+        top: auto; 
+    }
+
+    .pagamento-container {
+        width: 90%; 
+    }
+}

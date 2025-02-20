@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria LeVitlon</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-background">
+            <h1>Pizzaria LeVitlon</h1>
+            <h3>As melhores pizzas para você!</h3>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu">
+
+            <div class="categoria" id="salgadas">
+                <h3>Pizzas Salgadas</h3>
+                <div class="produtos">
+                    <div class="produto pizza-salgada" data-id="mussarela">
+                        <img src="imagens/mussarela.png" alt="Mussarela">
+                        <h3>Mussarela</h3>
+                        <select id="tamanhoMussarela">
+                            <option value="25">Pequena - R$ 25,00</option>
+                            <option value="35">Média - R$ 35,00</option>
+                            <option value="45">Grande - R$ 45,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto pizza-salgada" data-id="ricota">
+                        <img src="imagens/ricota.png" alt="Ricota">
+                        <h3>Ricota</h3>
+                        <select id="tamanhoRicota">
+                            <option value="25">Pequena - R$ 25,00</option>
+                            <option value="35">Média - R$ 35,00</option>
+                            <option value="45">Grande - R$ 45,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto pizza-salgada" data-id="4queijos">
+                        <img src="imagens/4queijos.png" alt="4 Queijos">
+                        <h3>4 Queijos</h3>
+                        <select id="tamanho4Queijos">
+                            <option value="25">Pequena - R$ 25,00</option>
+                            <option value="35">Média - R$ 35,00</option>
+                            <option value="45">Grande - R$ 45,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto pizza-salgada" data-id="portuguesa">
+                        <img src="imagens/portuguesa.png" alt="Portuguesa">
+                        <h3>Portuguesa</h3>
+                        <select id="tamanhoPortuguesa">
+                            <option value="25">Pequena - R$ 25,00</option>
+                            <option value="35">Média - R$ 35,00</option>
+                            <option value="45">Grande - R$ 45,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto pizza-salgada" data-id="frangoCatupiry">
+                        <img src="imagens/frango.png" alt="Frango com Catupiry">
+                        <h3>Frango com Catupiry</h3>
+                        <select id="tamanhoFrangoCatupiry">
+                            <option value="25">Pequena - R$ 25,00</option>
+                            <option value="35">Média - R$ 35,00</option>
+                            <option value="45">Grande - R$ 45,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto pizza-salgada" data-id="marguerita">
+                        <img src="imagens/marguerita.png" alt="Marguerita">
+                        <h3>Marguerita</h3>
+                        <select id="tamanhoMarguerita">
+                            <option value="25">Pequena - R$ 25,00</option>
+                            <option value="35">Média - R$ 35,00</option>
+                            <option value="45">Grande - R$ 45,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria" id="doces">
+                <h3>Pizzas Doces</h3>
+                <div class="produtos">
+                    <div class="produto pizza-doce" data-id="chocolate">
+                        <img src="imagens/chocolate.png" alt="Chocolate">
+                        <h3>Chocolate</h3>
+                        <select id="tamanhochocolate">
+                            <option value="20">Pequena - R$ 20,00</option>
+                            <option value="30">Média - R$ 30,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto pizza-doce" data-id="bananaCanela">
+                        <img src="imagens/banana.png" alt="Banana com Canela">
+                        <h3>Banana com Canela</h3>
+                        <select id="tamanhobananaCanela">
+                            <option value="20">Pequena - R$ 20,00</option>
+                            <option value="30">Média - R$ 30,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto pizza-doce" data-id="chocolateMorango">
+                        <img src="imagens/chocolatemorango.png" alt="Chocolate com Morango">
+                        <h3>Chocolate com Morango</h3>
+                        <select id="tamanhochocolateMorango">
+                            <option value="20">Pequena - R$ 20,00</option>
+                            <option value="30">Média - R$ 30,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto pizza-doce" data-id="romeuJulieta">
+                        <img src="imagens/romeujulieta.png" alt="Romeu e Julieta">
+                        <h3>Romeu e Julieta</h3>
+                        <select id="tamanhoromeuJulieta">
+                            <option value="20">Pequena - R$ 20,00</option>
+                            <option value="30">Média - R$ 30,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria" id="bebidas">
+                <h3>Bebidas</h3>
+                <div class="produtos">
+                    <div class="produto bebida" data-id="cocaCola">
+                        <img src="imagens/coca.png" alt="Coca-Cola">
+                        <h3>Coca-Cola</h3>
+                        <select id="tamanhoCocaCola">
+                            <option value="7">Lata - R$ 7,00</option>
+                            <option value="11">1,5L - R$ 11,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto bebida" data-id="guaranaAntartica">
+                        <img src="imagens/guarana.png" alt="Guaraná Antartica">
+                        <h3>Guaraná Antartica</h3>
+                        <select id="tamanhoGuaranaAntartica">
+                            <option value="7">Lata - R$ 7,00</option>
+                            <option value="11">1,5L - R$ 11,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto bebida" data-id="delValleUva">
+                        <img src="imagens/delvalleuva.png" alt="Del Valle Uva">
+                        <h3>Del Valle Uva</h3>
+                        <select id="tamanhoDelValleUva">
+                            <option value="5">Lata - R$ 5,00</option>
+                            <option value="9">1L - R$ 9,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria" id="combos">
+                <h3>Combos</h3>
+                <div class="produtos">
+                    <div class="produto combo" data-id="comboCasal">
+                        <img src="imagens/combocasal.png" alt="Combo Casal">
+                        <h3>Combo Casal</h3>
+                        <select id="tipoComboCasal">
+                            <option value="20">Média + Doce Pequena + Coca 1,5L - R$ 50,00</option>
+                            <option value="30">Grande + Coca 1,5L - R$ 55,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto combo" data-id="comboFamilia">
+                        <img src="imagens/combofamilia.png" alt="Combo Família">
+                        <h3>Combo Família</h3>
+                        <select id="tipoComboFamilia">
+                            <option value="20"> Grande + Doce Pequena + Coca 1,5L - R$ 65,00</option>
+                            <option value="30">Grande + Média + Coca 1,5L - R$ 70,00</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                    <div class="produto combo" data-id="comboTropa">
+                        <img src="imagens/combotropa.png" alt="Combo Tropa">
+                        <h3>Combo Tropa</h3>
+                        <select id="tipoComboTropa">
+                            <option value="20">Grande + Média + 2 Cocas 1,5L - R$ 95,00</option>
+                            <option value="30">2 Grandes + Coca 1,5L + Del Valle Uva 1L- R$ 99,99</option>
+                        </select>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="carrinho">
+        <div class="carrinho-toggle">
+            <button id="toggleCarrinho">
+                <img src="imagens/carrinho.png" alt="Carrinho">
+            </button>
+        </div>
+        <ul id="listaCarrinho"></ul>
+        <p>Total: R$ <span id="total">0,00</span></p>
+        <a href="pagamento.html" class="btn-finalizar">Finalizar Pedido</a>
+    </aside>
+
+</body>
+
+</html>
