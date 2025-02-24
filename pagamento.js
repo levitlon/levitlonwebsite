@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
             preco: item.preco
         }));
 
-        const scriptURL = "https://script.google.com/macros/s/AKfycby1d-J7jnXIN3cZODKbp7NhCwYZca0RqnOoIrgFCYfJtf_GRH6ijiBcUP_T-cPppsc_rQ/exec; // Substituir pelo ID no Apps Script
+        const scriptURL = "https://script.google.com/macros/s/AKfycby1d-J7jnXIN3cZODKbp7NhCwYZca0RqnOoIrgFCYfJtf_GRH6ijiBcUP_T-cPppsc_rQ/exec"; // Substituir pelo ID no Apps Script
 
         fetch(scriptURL, {
             method: "POST",
